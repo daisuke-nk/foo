@@ -1,0 +1,114 @@
+* {
+    font-family: "メイリオ",Meiryo,Tahoma,Verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 13px;
+    color: #000;
+    line-height: 2;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+p,ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+.headline {
+    text-align: center;
+    font-size  : 30px;
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+    margin: 20px 0;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    padding: 15px;
+}
+.list__items {
+    text-align: center;
+    border: 1px solid #333;
+    width: 32.3%;
+    margin: 0 .5% 15px;
+    padding: 15px;
+    cursor: pointer;
+    &.is-active {
+        background-color: #ccc;
+    }
+}
+.select-btn {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    margin: 15px 15px 0;
+    li {
+        cursor: pointer;
+        &:not(last-child):after {
+            content: "|";
+            margin: 0 10px;
+        }
+    }
+}
+.output {
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 15px;
+    padding: 10px;
+}
+svg {
+    width: 30px;
+    height: 30px;
+}
+pre {
+    font-size: 0;
+}
+code {
+    font-size: 11px;
+}
+.gnav {
+    display: flex;
+    position: fixed;
+    top     : 0;
+    right   : 10px;
+}
+    .gnav li {
+        margin: 0 5px;
+        a {
+            padding: 1px 10px;
+            background-color: #000;
+            color: #fff;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0 0 5px 5px;
+            transition: .2s ease;
+            position: relative;
+            &:after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-top  : 1px solid #fff;
+                border-right: 1px solid #fff;
+                transform: translateX(-50%) rotate(45deg);
+                position: absolute;
+                top     : 7px;
+                left    : 50%;
+                opacity: 0;
+            }
+            &:hover {
+                padding-top: 13px;
+                background-color: #555;
+                box-shadow: 0 3px 5px 1px rgba(0,0,0,.5);
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }

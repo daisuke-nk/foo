@@ -1,0 +1,58 @@
+
+
+.parts-list {
+    padding: 15px;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    > li {
+        margin: 0 0 50px;
+        width: 49.3%
+    }
+}
+    .parts-list__type {
+        font-size  : 20px;
+        font-weight: bold;
+    }
+    .parts-list__pass {
+        text-align: center;
+        margin: 0 0 5px;
+    }
+    .parts-list__img {
+        text-align: center;
+        margin: 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 320px;
+        border: 1px solid #ccc;
+        img {
+            max-height: 320px;
+        }
+    }
+    .parts-list__use {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin: 0 0 15px;
+        background-color: #ccc;
+        border-radius: 5px;
+        li {
+            margin: 0 15px;
+        }
+            a {
+                margin: 0 0 0 5px;
+            }
+    }
+    .parts-list__pre {
+        background-color: #000;
+        padding: 0 30px;
+        height: 200px;
+        overflow-y: scroll;
+        code {
+            color: #fff;
+            padding: 15px;
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+    }
